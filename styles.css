@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
@@ -148,6 +152,7 @@ footer {
     font-size: 14px;
     letter-spacing: 1px;
 }
+
 /* Estilizando o diário emocional */
 #diario-input {
     width: 100%;
@@ -165,16 +170,21 @@ footer {
     outline: none;
 }
 
+/* Mudança aplicada aqui: aumentei o espaçamento entre a frase e a caixa */
+#diario-emocional p {
+    margin-bottom: 15px; /* Aumentar o espaçamento entre a frase e a caixa */
+}
+
 #diario-input:focus {
     border-color: #3B82F6; /* Azul claro quando focado */
     background-color: #FFFFFF;
 }
 
 #salvar-diario {
-    background-color: #1E3A8A; /* Azul escuro */
-    color: #fff;
+    background-color: #1E3A8A;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
@@ -182,24 +192,37 @@ footer {
 }
 
 #salvar-diario:hover {
-    background-color: #3B82F6; /* Azul claro no hover */
+    background-color: #3B82F6; /* Azul claro quando o mouse está sobre o botão */
 }
 
-#salvar-diario:active {
-    background-color: #1D4ED8; /* Azul ainda mais escuro ao clicar */
+#diario-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
 }
 
-/* Estilo da lista de entradas do diário */
 #diario-list li {
-    background-color: #E5E7EB; /* Cinza claro */
-    margin-bottom: 8px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    background-color: #E5E7EB;
+    border-left: 4px solid #1E3A8A;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
     color: #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
-#diario-emocional p {
-    font-size: 1.2rem;
-    margin-bottom: 30px; /* Aumentar para 30px ou conforme a necessidade */
+
+/* Seção de técnicas de relaxamento */
+#tecnicas-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tecnicas-list li {
+    background-color: #E5E7EB;
+    border-left: 4px solid #1E3A8A;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 4px;
 }
