@@ -1,3 +1,13 @@
+// Ativando o scroll suave ao clicar nos links de navegação
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 // Dados dinâmicos
 const tecnicas = [
     "Respiração Profunda: Inspire lentamente e profundamente pelo nariz, segure por alguns segundos e solte o ar pela boca.",
@@ -32,6 +42,11 @@ document.getElementById("tecnicas-btn").addEventListener("click", () => {
         const listItem = document.createElement("li");
         listItem.textContent = tecnica;
         tecnicasList.appendChild(listItem);
+    });
+
+    // Rolagem suave para a seção de técnicas
+    document.getElementById("tecnicas-relaxamento").scrollIntoView({
+        behavior: 'smooth'
     });
 });
 
