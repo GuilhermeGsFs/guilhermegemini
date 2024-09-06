@@ -1,0 +1,205 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: linear-gradient(90deg, #264653, #2a9d8f); /* Degradê de azul-marinho a verde-menta */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    background: linear-gradient(120deg, #264653, #e76f51); /* Degradê suave de azul a coral */
+    color: #fff;
+    padding: 80px 10%;
+    text-align: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .btn {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #264653;
+}
+
+/* Seções de Conteúdo */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #264653;
+}
+
+.section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 2px solid #2a9d8f;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #2a9d8f;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #264653;
+}
+
+/* Rodapé */
+footer {
+    background-color: #264653;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/* Estilizando o diário emocional */
+#diario-input {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #1E3A8A; /* Azul escuro */
+    border-radius: 8px;
+    background-color: #F0F4F8; /* Fundo leve */
+    color: #333;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    resize: none;
+    outline: none;
+}
+
+#diario-input:focus {
+    border-color: #3B82F6; /* Azul claro quando focado */
+    background-color: #FFFFFF;
+}
+
+#salvar-diario {
+    background-color: #1E3A8A; /* Azul escuro */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#salvar-diario:hover {
+    background-color: #3B82F6; /* Azul claro no hover */
+}
+
+#salvar-diario:active {
+    background-color: #1D4ED8; /* Azul ainda mais escuro ao clicar */
+}
+
+/* Estilo da lista de entradas do diário */
+#diario-list li {
+    background-color: #E5E7EB; /* Cinza claro */
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#diario-emocional p {
+    font-size: 1.2rem;
+    margin-bottom: 30px; /* Aumentar para 30px ou conforme a necessidade */
+}
